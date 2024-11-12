@@ -1,0 +1,23 @@
+{
+  "name": "@harsh07may/shared-prisma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:introspect": "dotenv -- prisma introspect",
+    "db:generate": "dotenv -- prisma generate",
+    "postinstall": "tsc && cp src/index.d.ts dist/index.d.ts && npx prisma@2.18.0 generate"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "prisma": "^5.22.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0"
+  }
+}
